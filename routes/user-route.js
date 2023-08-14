@@ -10,11 +10,10 @@ import { RefreshToken } from "../controllers/refresh-token.js";
 
 const route = express.Router();
 
-//PUBLIC ROUTES
+
 route.post("/register", Register);
 route.post("/login", Login);
 
-//SECRET ROUTE
 route.get("/users", verifyToken, GetUsers);
 route.get("/token", RefreshToken);
 route.delete("/logout", Logout);
