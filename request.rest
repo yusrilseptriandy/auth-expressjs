@@ -1,0 +1,15 @@
+GET http://localhost:3200/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidXNlcnMiLCJpYXQiOjE2OTIwMDUzNTAsImV4cCI6MTY5MjAwNTM3MH0.J-sFY9V14IvFBFIjcrkhs4lfayxOa4wDnCgUpxMl0tc
+
+
+###
+POST  http://localhost:3200/login
+Content-Type: application/json
+
+{
+    "email": "test@dev.com",
+    "password": "yusril"
+}
+
+###
+GET http://localhost:3200/token
